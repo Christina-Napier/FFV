@@ -4,7 +4,7 @@ import matplotlib
 from pylab import *
 from numpy import *
 import numpy as np
-sys.stdout=open("test.txt","w")
+sys.stdout=open("output.txt","w")
 
 class fileInput()
 def jpeg_to_decimal(jpeg_loc, as_rgb=True):
