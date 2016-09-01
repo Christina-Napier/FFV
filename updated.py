@@ -32,7 +32,7 @@ def jpeg_to_decimal(jpeg_loc, as_rgb=True):
        #getting indentation errors with the below
     else:
 	return decimal_values # This branch gives a list
-jpeg_to_decimal(r'text.txt')
+jpeg_to_decimal(r'input.txt')
 sys.stdout.close()
 
 fileInput()
