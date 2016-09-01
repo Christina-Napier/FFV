@@ -2,9 +2,11 @@ import binascii
 import sys
 import matplotlib
 from pylab import *
+from numpy import *
 import numpy as np
 sys.stdout=open("test.txt","w")
 
+class fileInput()
 def jpeg_to_decimal(jpeg_loc, as_rgb=True):
     '''
     Takes the location of a jpeg and returns it as a list of decimal values.
@@ -30,7 +32,11 @@ def jpeg_to_decimal(jpeg_loc, as_rgb=True):
        #getting indentation errors with the below
     else:
 	return decimal_values # This branch gives a list
-	
+jpeg_to_decimal(r'text.txt')
+sys.stdout.close()
+
+fileInput()
+
 #Create test data with zero valued diagonal:
 	#data = np.random.random_sample((512, 512))
 	#data = What do I put in here to get the data from decimal_values??
@@ -47,8 +53,3 @@ def jpeg_to_decimal(jpeg_loc, as_rgb=True):
 	#colorbar()
 	#savefig('map2.png')
 	#show()
-
-
-jpeg_to_decimal(r'text.txt')
-sys.stdout.close()
-		
