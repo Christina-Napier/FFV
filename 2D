@@ -1,0 +1,20 @@
+import numpy,scipy, os, array
+import scipy.misc
+import glob
+
+path = 'pathgoeshere';
+for filename in glob.glob(os.path.join(path, '*.txt')):
+    f = open(filename,'rb');
+
+    ln = os.path.getsize(filename); # length of file in bytes
+    width = 256;
+    rem = ln%width;
+    fname = filename
+
+    a = array.array("B"); # uint8 array
+    a.fromfile(f,ln-rem);
+    f.close();
+
+    g = numpy.reshape(a,(len(a)/width,width));
+    g = numpy.uint8(g);
+scipy.misc.imsave(os.path.basename(fname) + "-output", g, format="PNG"); # save the image
